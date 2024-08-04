@@ -1,0 +1,399 @@
+body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+}
+
+.homepage-container {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff 0%, #f1f1f1 100%);
+    text-align: left;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.aboutBtn {
+    float: left;
+    top: 20px;
+    right: 20px;
+    border: none;
+    width:70px;
+    border-radius: 4px;
+}
+
+.homeButton 
+{
+    float:right;
+    top: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin: 5px;
+}
+.users-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.manager-username{
+    font-weight:bold;
+}
+button:hover, .btn:hover {
+    transform: scale(1.05);
+}
+
+button:focus, .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.create-project-button {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btnLogout {
+    background-color: #dc3545;
+}
+
+
+.homepage-title {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top:30px;
+}
+
+/* User Info Styles */
+.user-info {
+     margin-bottom: 20px;
+}
+
+.user-detail {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.project-list {
+    margin-top: 20px;
+}
+
+.project-link {
+    display: block;
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 2px;
+    color: black;
+    background-color: #007bff;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px auto;
+    line-height: 1.2;
+}
+
+
+.ListContainer ul {
+    padding: 0;
+    margin: 0;
+    text-align:center;
+
+}
+
+.create-project-button-container {
+    padding:1px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .homepage-container {
+        padding: 20px;
+    }
+
+    button, .btn {
+        padding: 4px 8px;
+        font-size: 11px; 
+    }
+
+    .homepage-title {
+        font-size: 20px;
+    }
+
+    .user-detail {
+        font-size: 12px;
+    }
+
+    .project-link {
+        font-size: 13px;
+    }
+    
+}
+
+/* Container for all pages */
+.container {
+    max-width: 700px; /* Maximum width of the content area */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Padding around the content */
+    background-color:transparent;
+}
+
+.project-details-container {
+    background-color:transparent;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message-container {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.message-text {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-username {
+    font-weight: bold;
+    margin-right:3px;
+}
+
+.message-content {
+    font-weight: normal;
+}
+
+.message-date {
+    font-size: 12px;
+    color: #666;
+    margin-left: auto;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+textarea {
+    resize: none;
+    box-sizing: border-box;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 4px 15px;
+    text-align: center;
+    color: #333;
+}
+
+th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9; 
+}
+
+    td .complete-button {
+        padding: 6px 12px;
+        margin: 0;
+    }
+
+    td button {
+        margin: 0;
+    }
+
+    td:empty {
+        padding: 0; 
+    }
+
+tr:hover {
+    background-color: #ffffff;
+    color: #007bff;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    table {
+        width: 100%; /* Full width on smaller screens */
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px 12px;
+    }
+}
+
+.assign-task-form {
+
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+    .assign-task-form h3 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .assign-task-form label {
+        display: block;
+        margin-bottom: -20px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .assign-task-form input[type="text"],
+    .assign-task-form input[type="date"],
+    .assign-task-form select {
+        width: calc(100% - 16px);
+        padding: 8px; 
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .assign-task-form button {
+        padding: 6px;
+        margin: 5px;
+        font-size: 14px; 
+        width: auto;
+        min-width: 80px;
+    }
+    .assignButtons {
+       display:flex;
+       justify-content:center;
+    }
+    
+
+        .assign-task-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .assign-task-form button.cancel {
+            background-color: #dc3545;
+        }
+
+            .assign-task-form button.cancel:hover {
+                background-color: #c82333;
+            }
+
+button.remove-member {
+    background-color: #dc3545;
+    padding: 2px 3px;
+    font-size: 12px;
+}
+
+button.remove-member:hover {
+    background-color: #c82333;
+}
+
+button.add-member {
+    background-color: green;
+    padding: 3px 4px;
+    font-size: 12px;
+}
+
+button.complete-button {
+    width: auto;
+    padding: 4px; 
+    font-size:small;
+    margin: 0;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border: none; 
+    border-radius: 2px;
+    cursor: pointer; 
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-weight: bold;
+}
+
+/* Form Inputs */
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], select {
+    width: calc(100% - 22px); /* Full width except for padding */
+    padding: 10px;
+    margin: 5px 0;
+ 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.authForm{
+    max-width:400px;
+    margin:0 auto;
+}
+.authForm.h2{
+    text-align:center;
+
+}
+
+.login-form input {
+    width: 100%; /* Ensuring all inputs in the form are full width */
+}
+
+
+.td-Complete {
+    width: 0px;
+}
